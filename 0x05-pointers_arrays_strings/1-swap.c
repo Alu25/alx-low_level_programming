@@ -1,10 +1,14 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
+/**
+ * swap_int - swaps the values of two integers
+ * @a: integer 1
+ * @b: integer 2
+ *
+ **/
+void swap_int(int *a, int *b)
+{
+	int c = *a;
 
-
-void swap(int *a, int *b) {
-  *a += *b;
-  *b = *a - *b;
-  *a -= *b; 
+	*a = *b;
+	*b = c;
 }
-
